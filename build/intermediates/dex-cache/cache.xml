@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/vikram/Documents/android_workspace/MyApplication/app/build/intermediates/exploded-aar/com.jjoe64/graphview/4.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="37bf8de5b4f9e7e93006db783b9b3168e32e38e9">
+        <dex dex="/Users/vikram/Documents/android_workspace/MyApplication/app/build/intermediates/pre-dexed/debug/classes-2aee431d3d1eb310275cb9a56388c8a7ec30bc1a.jar" />
+    </item>
+
+</items>

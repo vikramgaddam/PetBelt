@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edecec"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="200dp"
+        card_view:cardBackgroundColor="#ecebe5"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="10sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:src="@drawable/pets_circle"
+                android:id="@+id/image1"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/info_text1" />
+
+            <TextView
+                android:id="@+id/info_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="Health Status:"
+                android:layout_marginLeft="10dp"
+
+                android:typeface="normal"
+                android:layout_below="@+id/image1"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Good  "
+                android:id="@+id/textView"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/info_text1" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="TemperatureGraph"
+        android:layout_height="200dp"
+        card_view:cardBackgroundColor="#aca6a6"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="10sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/temperature"
+                android:background="#000000"
+                android:paddingBottom="0dp"
+                android:id="@+id/image"/>
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5e5b5b"
+                android:textSize="20sp"
+                android:textColor="#fcf9f9"
+                android:text="  Body Temperature:"
+                android:typeface="normal"
+                android:layout_below="@+id/image"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/temperature_value"
+                android:text="100     "
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:padding="2dp"
+                android:layout_below="@+id/info_text"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:src="@drawable/fahrenheit"
+                android:layout_below="@+id/info_text"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="200dp"
+        android:onClick="airQuality"
+        card_view:cardBackgroundColor="#aca6a6"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="10sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:background="#000000"
+                android:src="@drawable/surroundngs"
+
+                android:id="@+id/image2"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/air_quality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5e5b5b"
+                android:textSize="20sp"
+                android:textColor="#fcf9f9"
+                android:text="  Air Quality: "
+                android:typeface="normal"
+                android:layout_below="@id/image2"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:padding="2dp"
+                android:text="10  "
+                android:id="@+id/air_quality_value"
+                android:layout_below="@id/air_quality"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view3"
+
+    android:layout_width="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_height="200dp"
+        android:onClick="activePoints"
+        card_view:cardBackgroundColor="#aca6a6"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="10sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:background="#000000"
+            android:src="@drawable/actvpnts2"
+
+            android:id="@+id/image3"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/active_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5e5b5b"
+            android:textSize="20sp"
+            android:textColor="#fcf9f9"
+            android:text="  Active Points:"
+            android:typeface="normal"
+            android:layout_below="@id/image3"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:padding="2dp"
+            android:text="10  "
+            android:id="@+id/active_points_value"
+            android:layout_below="@id/active_points"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>
+    </ScrollView>
